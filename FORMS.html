@@ -1,0 +1,242 @@
+<html>
+<head>
+<title> boom </title>
+<style>
+@import url('https://fonts.cdnfonts.com/css/roboto-serif');
+
+body {
+font-family: "Roboto Serif", serif;
+}
+
+.yesdiv {
+align: center;
+border-radius: 80px;
+background-color: #CFBAD1;
+width: 100%;
+padding: 40px;
+max-width: 1200px;
+margin: 30px auto 0;
+opacity: 90%
+}
+
+form input{
+font-family: Roboto Serif;
+margin: 15px;
+padding: 20px;
+width: 350px;
+text-align: center;
+transition: all 1s;
+border-radius: 25px;
+} 
+
+form input:hover {
+font-size: 20px;
+background-color: #F0D4C8;
+}
+
+select {
+font-family: Roboto Serif;
+margin: 10px;
+padding: 10px;
+width: 350px;
+text-align: center;
+transition: all 1s;
+border-radius: 25px;
+} 
+
+select:hover {
+font-size: 20px;
+background-color: #F0D4C8;
+}
+
+textarea {
+font-family: Roboto Serif;
+margin: 10px;
+padding: 10px;
+width: 1000px;
+height: 60px;
+text-align: center;
+transition: all 1s;
+border-radius: 25px;
+}
+
+textarea: hover {
+font-size: 20px;
+background-color: #F0D4C8;
+}
+
+option {
+font-family: Roboto Serif;
+margin: 10px;
+padding: 10px;
+width: 1000px;
+height: 60px;
+text-align: center;
+transition: all 1s;
+border-radius: 25px;
+}
+
+
+p {
+size: 30;
+}
+
+@font-face {
+    font-family: 'Roboto Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Serif'), url('https://fonts.cdnfonts.com/s/107367/RobotoSerif[GRAD,opsz,wdth,wght].woff') format('woff');
+}
+@font-face {
+    font-family: 'Roboto Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Roboto Serif'), url('https://fonts.cdnfonts.com/s/107367/RobotoSerif-Italic[GRAD,opsz,wdth,wght].woff') format('woff');
+}
+.bgmusic {
+    font-size: 2px;
+}
+</style>
+</head>
+
+<body style="background-image:linear-gradient(#cea9c1, #dda6a6, #f9caca, #bfa3cc, #d9baee);">
+    
+    <audio src="C:\Users\User\Desktop\FORMS ICT\nobonoko - Strawberry Cake.mp3" controls="autostart" height="100" width="100">
+    </audio>
+    <p id="bgmusic">Play this audio for an awesome experience!</p>
+<center>
+<form>
+<div class="yesdiv">
+
+<h3> FULL NAME </h3>
+
+<div>
+<input type="text" id="Pangalan" name="Pangalan"  placeholder="FIRST NAME">
+
+<input type="text" id="mo" name="mo"  placeholder="MIDDLE NAME">
+
+<input type="text" id="fls" name="fls"  placeholder="SURNAME">
+</div>
+
+<h3> ADDITIONAL DETAILS </h3>
+
+<div>
+<select id="grade" name="grade" title="whtgrade">
+<option value="grade7" onclick="ok()">Grade 7</option>
+<option value="grade8">Grade 8</option>
+<option value="grade9">Grade 9</option>
+<option value="grade10">Grade 10</option>
+<option value="grade11">Grade 11</option>
+<option value="grade12">Grade 12</option>
+</select>
+
+<input type="text" id="lemontree" name="lemontree"  placeholder="SECTION">
+
+<input type="date" id="pirlba" name="pirlba"  placeholder="DATE TODAY">
+</div>
+<br>
+<br>
+
+<h1> Q&A </h1>
+
+<center> <p> What are your preferences in tasting a cake? </p> </center>
+
+<div>
+<textarea  minlength="1" placeholder="YOUR RESPONSE"></textarea>
+</div>
+
+<center> <p> Which do you care more about, how your baking tastes or how your baking looks?</p> </center>
+
+<div>
+    <textarea  minlength="1" placeholder="YOUR RESPONSE"></textarea>
+    </div>
+
+    <center> <p> Do you enjoy baking?</p> </center>
+    <div>
+        <select id="bak" name="bak" title="Options">
+        <option value="Options" onclick="ok()">Options</option>
+        <option value="Yes">Yes</option>
+        <option value="Maybe">Maybe</option>
+        <option value="No">No</option>
+        </select>
+        </div>
+
+        <center> <p> Do you have a favorite pastry? If yes, what is it?</p> </center>
+
+        <div>
+            <textarea  minlength="1" placeholder="YOUR RESPONSE"></textarea>
+            </div>
+
+    <center> <p> Do you feel that baking is different from cooking?</p> </center>
+<div>
+<select id="bak" name="bak" title="Options">
+<option value="Options" onclick="ok()">Options</option>
+<option value="Yes">Yes</option>
+<option value="Maybe">Maybe</option>
+<option value="No">No</option>
+</select>
+</div>
+
+<center> <p> Are you a good baker? Why or why not?</p> </center>
+
+<div>
+    <textarea  minlength="1" placeholder="YOUR RESPONSE"></textarea>
+    </div>
+
+    <center> <p> In today's youth, is baking a hobby or more of business use?</p> </center>
+
+    <div>
+        <textarea  minlength="1" placeholder="YOUR RESPONSE"></textarea>
+        </div>
+
+        <center> <p> Would you like others to try what product you baked?</p> </center>
+        <div>
+            <select id="bak" name="bak" title="Options">
+            <option value="Options" onclick="ok()">Options</option>
+            <option value="Yes">Yes</option>
+            <option value="Maybe">Maybe</option>
+            <option value="No">No</option>
+            </select>
+            </div>
+
+            <center> <p> If you will be given a chance to build a bakery, how would you want to design it? </p> </center>
+            <div>
+                <textarea  minlength="1" placeholder="YOUR RESPONSE"></textarea>
+                </div>
+
+                <center> <p> In your opinion, how important is baking in our life? </p> </center>
+                <div>
+                    <textarea  minlength="1" placeholder="YOUR RESPONSE"></textarea>
+                    </div>
+
+<div>
+<input type="submit" value="Submit" onclick="ex()">
+</div>
+
+
+</form>
+
+<script>
+
+var musicSound = new Audio("grocery shopping fr.mp3");
+
+function ex()
+{
+ var Pangalan =document.getElementById("Pangalan").value;
+ var mo = document.getElementById("mo").value;
+ var fls = document.getElementById("fls").value;
+ var whtgrade = document.getElementById("whtgrade").value;
+
+localStorage.setItem("Pangalan", Pangalan);
+localStorage.setItem("mo", mo);
+localStorage.setItem("fls", fls);
+localStorage.setItem("whtgrade", whtgrade);
+}
+
+function musica(btn) {
+musicSound.play();
+}
+
+</script>
+</center>
+
